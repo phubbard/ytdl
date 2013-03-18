@@ -16,7 +16,9 @@ Then she wanted to be able to replicate this for her better half. Who isn't here
 visit. So I wrote this repo, which is a shell script to download the files, put them into
 ~/bin and ~/Desktop, and set the permissions (755) accordingly.
 
-## How It Should Work (to be tested)
+## How It Should Work
 
-curl -O https://github.com/phubbard/ytdl/raw/master/automatic.sh && ./automatic.sh
+curl -LO https://github.com/phubbard/ytdl/raw/master/automatic.sh && sh ./automatic.sh && rm automatic.sh
 
+## Notes and bugs
+Does not check result codes, so if you are missing curl or somesuch it'll no doubt fail.
