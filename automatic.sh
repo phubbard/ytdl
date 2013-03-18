@@ -9,7 +9,7 @@
 #
 # That's all!
 # Intended usage is a one-liner I can email family:
-# curl -O https://github.com/phubbard/ytdl/raw/master/automatic.sh; sh automatic.sh
+# curl -LO https://github.com/phubbard/ytdl/raw/master/automatic.sh && sh automatic.sh
 # 
 # Notes: youtube-dl in ~/bin, download-youtube in ~/Desktop, movies into ~/Movies
 
@@ -32,7 +32,7 @@ fi
 
 cd $HOME/bin
 echo -n "Downloading youtube-dl..."
-curl -O https://github.com/rg3/youtube-dl/raw/master/youtube-dl
+curl -LO https://raw.github.com/rg3/youtube-dl/raw/master/youtube-dl
 if [ -f youtube-dl ]
 then
   echo "downloaded."
@@ -49,8 +49,9 @@ then
  echo "Heading to Desktop to download wrapper script"
  cd $HOME/Desktop
  echo "Downloading wrapper..."
- curl -O https://github.com/phubbard/ytdl/raw/master/download-youtube
+ curl -LO https://github.com/phubbard/ytdl/raw/master/download-youtube
  if [ -f download-youtube ]
+ then
   echo "downloaded, marking executable"
   chmod 755 download-youtube
   echo "And we're all done! Enjoy."

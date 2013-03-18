@@ -3,7 +3,7 @@
 if [ -d $HOME/Movies ]
 then
  cd $HOME/Movies
- pbpaste | $HOME/bin/youtube-dl -l
+ pbpaste | xargs $HOME/bin/youtube-dl -l
 else
  echo "~Movies directory not found, exiting"
  exit 1
