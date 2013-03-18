@@ -1,3 +1,4 @@
+#!/bin/sh
 # pfh@phfactor.net 3/18/13
 
 if [ -d $HOME/Movies ]
