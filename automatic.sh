@@ -32,7 +32,7 @@ fi
 
 cd $HOME/bin
 echo -n "Downloading youtube-dl..."
-curl -LO https://raw.github.com/rg3/youtube-dl/raw/master/youtube-dl
+curl -LO https://github.com/rg3/youtube-dl/raw/master/youtube-dl
 if [ -f youtube-dl ]
 then
   echo "downloaded."
